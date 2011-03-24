@@ -12,7 +12,6 @@ GENERATORS
 
 generate "devise:install"
 generate "devise User"
-generate "devise Admin"
 
 
 git :init
