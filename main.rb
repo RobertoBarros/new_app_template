@@ -4,6 +4,16 @@ run "wget --no-check-certificate '#{BASE_URI}/GemFile' -O GemFile"
 
 run "bundle install"
 
+application  <<-GENERATORS
+config.generators do |g|
+  g.template_engine :haml
+end
+GENERATORS
+
+generate "devise:install"
+generate "devise User"
+generate "devise Admin"
+
 
 git :init
 git :add => '.'
