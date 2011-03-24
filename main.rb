@@ -7,6 +7,5 @@ run "bundle install"
 
 git :init
 git :add => '.'
-git :add => 'public/javascripts/rails.js --force'
 git :commit => '-am "Initial commit"'
 
