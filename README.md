@@ -18,6 +18,17 @@ Defina uma root_url no `config/routes.rb`, por exemplo
 
     root :to => "home#index"
 
+Na view (por exemplo na application.html.haml) adicione:
+
+    - if user_signed_in?
+      Olá  #{current_user.email}. Não é você?
+      = link_to "sair", destroy_user_session_path
+    - else
+      = link_to "Novo ", new_user_registration_path
+      ou
+      = link_to " Entrar", new_user_session_path
+
+
 Devise RPX
 ----------
 
@@ -45,10 +56,10 @@ No `config/application.rb`, dentro da class `Application < Rails::Application` a
 
 Adicionar a chamada javascript na View Application:
 
-    <%= javascript_include_rpx(user_session_url) %>
+    = javascript_include_rpx(user_session_url)
 
 e o link para abrir o popup do RPX:
 
-    <%= link_to_rpx "Signin using RPX!", user_session_url %>
+    = link_to_rpx "Signin using RPX!", user_session_url
 
 
