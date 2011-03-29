@@ -5,7 +5,6 @@
     = raw stylesheet_link_merged('screen', :media => 'screen, projection')
     = raw stylesheet_link_merged('print', :media => 'print')
     /[if lt IE 8]
-      = raw stylesheet_link_merged('ie', :media => 'screen, projection')
       %script{:src => "http://html5shiv.googlecode.com/svn/trunk/html5.js" }
     = csrf_meta_tag
   %body.two-column
