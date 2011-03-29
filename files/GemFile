@@ -6,6 +6,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 gem 'haml-rails', '>= 0.2'
 gem "compass"
+gem "compass-960-plugin"
 
 gem 'devise'
 gem "devise_rpx_connectable"
