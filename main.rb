@@ -19,7 +19,7 @@ generate "devise:install"
 generate "devise User"
 
 run "rm public/stylesheets/*"
-run "compass init -r ninesixty --using 960--syntax sass --app rails --css-dir public/stylesheets --sass-dir app/stylesheets"
+run "compass init -r ninesixty --using 960 --syntax sass --app rails --css-dir public/stylesheets --sass-dir app/stylesheets"
 
 run "wget --no-check-certificate 'https://github.com/rails/jquery-ujs/raw/master/src/rails.js' -O public/javascripts/rails.js"
 run "wget --no-check-certificate '#{BASE_URI}/application.html.haml' -O app/views/layouts/application.html.haml"
