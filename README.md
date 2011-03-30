@@ -11,8 +11,8 @@ Para criar um novo projeto:
 
 onde app_name é o nome do projeto.
 
-Devise
-------
+Utilizando Devise
+-----------------
 
 Defina uma root_url no `config/routes.rb`, por exemplo
 
@@ -20,7 +20,7 @@ Defina uma root_url no `config/routes.rb`, por exemplo
 
 Na view (por exemplo na application.html.haml) adicione:
 
-    - if user_signed_in?
+        - if user_signed_in?
       Olá  #{current_user.email}. Não é você?
       = link_to "sair", destroy_user_session_path
     - else
@@ -29,8 +29,8 @@ Na view (por exemplo na application.html.haml) adicione:
       = link_to " Entrar", new_user_session_path
 
 
-Devise RPX
-----------
+Utilizando Devise RPX (Janrain)
+----------------------------
 
 No model de usuário criado pelo devise em `app/models/user.rb` adicionar no método devise:
 
