@@ -60,6 +60,4 @@ Adicionar a chamada javascript na View Application:
 
 e o link para abrir o popup do RPX:
 
-    = link_to_rpx "Signin using RPX!", user_session_url
-
-
+    = link_to_rpx "Signin using RPX!", user_session_url, {language: 'pt-BR'}
