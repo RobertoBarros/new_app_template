@@ -14,13 +14,13 @@ onde app_name é o nome do projeto.
 Utilizando Devise
 -----------------
 
-Defina uma root_url no `config/routes.rb`, por exemplo
+Defina uma root_url no `config/routes.rb`, por exemplo:
 
     root :to => "home#index"
 
-Na view (por exemplo na application.html.haml) adicione:
+Na view (neste caso em application.html.haml) adicione:
 
-        - if user_signed_in?
+    - if user_signed_in?
       Olá  #{current_user.email}. Não é você?
       = link_to "sair", destroy_user_session_path
     - else
