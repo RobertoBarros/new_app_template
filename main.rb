@@ -1,4 +1,4 @@
-BASE_URI = "https://github.com/RobertoBarros/new_app_template/raw/grid960/files"
+BASE_URI = "https://github.com/RobertoBarros/new_app_template/raw/master/files"
 
 
 run "rm -Rf .gitignore public/index.html public/javascripts/* test app/views/layouts/*"
