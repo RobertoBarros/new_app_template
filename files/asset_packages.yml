@@ -3,9 +3,9 @@ javascripts:
 - base:
   - rails
 stylesheets:
-- ie:
-  - ie
 - screen:
-  - screen
+  - grid
+  - text
 - print:
-  - print
+  - grid
+  - text
